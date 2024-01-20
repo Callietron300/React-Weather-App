@@ -1,0 +1,185 @@
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+html {
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #e5e5e5;
+  --secondary: #123285;
+}
+
+body {
+  background-color: var(--secondary);
+  color: var(--primary);
+  font-family: "Circular Std Bold", "Poppins", sans-serif;
+}
+
+/* Containers */
+.app-container {
+  margin: 3rem auto;
+  width: 375px;
+  padding: 1rem 1.5rem;
+  border: 3px solid var(--primary);
+}
+
+.weather-today {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Text Formatting */
+
+@font-face {
+  font-family: "Circular Std Bold", "Poppins", sans-serif;
+  src: url("../font/circular-std-4.ttf");
+}
+
+h1,
+h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+.strong {
+  font-weight: 600;
+}
+
+.temp {
+  font-size: 10rem;
+  font-weight: 600;
+}
+
+.time {
+  font-size: 0.8rem;
+}
+
+/* Spacing */
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.row-tight {
+  display: flex;
+  flex-direction: row;
+}
+
+.ml-sm {
+  margin-right: 7px;
+}
+
+.mt-sm {
+  margin-top: 1rem;
+}
+
+.mt-m {
+  margin-top: 2rem;
+}
+
+.mt-l {
+  margin-top: 3rem;
+}
+
+/* Loader */
+.loading {
+  color: var(--primary);
+  margin: 2rem auto;
+}
+/*Form*/
+.form-input {
+  color: var(--primary);
+  font-family: "Circular Std Bold", "Poppins", sans-serif;
+  outline: none;
+  border: 1px solid transparent;
+  background-color: transparent;
+  border-bottom: 3px solid var(--primary);
+  margin-right: 0.5rem;
+  padding: 0.2rem;
+  font-size: 1.1rem;
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: var(--primary);
+  opacity: 1;
+}
+
+.form-submit {
+  text-align: end;
+  font-family: "Circular Std Bold", "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  outline: none;
+  color: var(--primary);
+  background-color: transparent;
+  border: 3px solid var(--primary);
+  margin-bottom: 1rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.form-submit:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+/* Forecast */
+.weather-row {
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  width: 100%;
+}
+
+.weather-row p:nth-child(2) {
+  text-align: center;
+}
+
+.weather-row p:nth-child(3) {
+  text-align: end;
+}
+
+hr {
+  border: 2px solid var(--primary);
+}
+
+/* Tag */
+.tag {
+  text-align: center;
+  margin: 1rem auto;
+  width: 375px;
+}
+
+.tag a {
+  color: var(--primary);
+  font-weight: 600;
+}
